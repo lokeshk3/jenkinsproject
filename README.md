@@ -1,6 +1,2 @@
-# jenkinsproject
-jenkinsproject for testing
-this is test
-test is 2 test
-this is again test
-this is new trwszt
+# hellowhale
+Simple Docker Demo App
