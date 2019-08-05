@@ -1,17 +1,14 @@
-apiVersion: v1
-kind: Service
+apiVersion: v1
+kind: Service
 metadata:
-  name: website-v1
+  name: website-v1
 spec:
-  selector:
-    app: website-v1
-  ports:
-    - protocol: TCP
-      port: 8050
-      targetPort: 80
-  clusterIP: 10.0.117.68
-  type: LoadBalancer
-status:
-  loadBalancer:
-    ingress:
-      - ip: 52.168.67.237 
+  type: NodePort
+  ports:
+  - port: 8050
+    nodePort: 30000
+    targetPort: 80
+    protocol: TCP
+    name: http
+  selector:
+    app: website-v1
