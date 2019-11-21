@@ -1,9 +1,1 @@
-# hellowhale
-Simple Docker Demo App
-test file again 
-This is jenkins test  
-again 
-again 
-again
-again
-again
+http://35.170.198.32:8080/github-webhook
